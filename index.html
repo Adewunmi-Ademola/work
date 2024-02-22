@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<header>
+  <a href="#" class="logo">*DEMZY*</a>
+
+  <input type="checkbox" id="menu-bar">
+  <label for="menu-bar"><i class="fa fa-bars" aria-hidden="true"></i></label>
+  
+     <nav class="navbar"> 
+      <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#project">projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    
+    <!-------------------------------------------------->
+  <script>document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('.section');
+  
+    function changeBackgroundColor() {
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+  
+        if (rect.top <= window.innerHeight * 0.5 && rect.bottom >= window.innerHeight * 0.5) {
+          // If the section is more than halfway visible, change its background color
+          document.body.style.backgroundColor = section.style.backgroundColor;
+        }
+      });
+    }
+  
+    window.addEventListener('scroll', changeBackgroundColor);
+    window.addEventListener('resize', changeBackgroundColor);
+  });
+  </script>
+    
+    <!-------------------------------------------------->
+    <div id="header"> 
+      <section>
+        <div class="container-home">
+          <div class="content-home">
+            <h1 class="wel">Adewunmi-Ademola</h1>
+            <p class="read">Welcome to my digital domain! As a self-taught developer originating from the vibrant landscape of Nigeria, I extend a warm greeting to all visitors exploring my corner of the web. It's an honor to have you here.</p>
+           <a href="photo/RESUME.pdf"><button>My Resume</button></a> 
+      </section>
+    </div>
+    
+  <!------------------------------------------------------------------------------------->
+  <div class="rainbow-line">
+  </div>
+  <!------------------------------another section----------------------------------------->
+  <div id="about">
+    <div class="container-about">
+      <div class="content-about">
+        <div class="image-content-about">
+        
+          <img src="photo/jul.png" alt="Your Image">
+        </div>
+        <div class="text-content-about">
+          <h2>About Me</h2>
+          <h4>Frontend Developer</h4>
+          <input type="checkbox" id="read-more-checkbox" class="read-more-checkbox">
+          <div class="read-more-content">
+            
+              <p>During my secondary school years, I was introduced to coding but didn't fully grasp its workings, so I didn't pursue it. However, in 2022, my uncle, also in the tech field, introduced me to HTML, CSS, and JavaScript. He revealed the possibility of creating websites with these languages and showed me the basics. Since then, my interest in learning them has surged.</p>
+
+             <p>I began exploring various free resources like FREECODE CAMP, BRO CODE, CODER-CODER, SIMPLILEARN, and others. Despite experiencing frustrations during my learning journey, I remained determined and committed to learning more every day.</p>
+            
+            <p class="additional-content">
+              My choice to specialize in frontend development stems from my passion for drawing, painting, and connecting with the natural world. I see frontend development as akin to my artistic pursuits: drawing for structure, painting for styling, and using JavaScript to infuse a sense of interaction for the user. This unique blend resonates with my creative inclinations and fuels my enthusiasm for frontend development.
+              <br>
+              <br>
+             I like to work on personal projects or any team project. This approach allows me to delve into individual explorations while also thriving in collaborative environments. In my experience, the synergy between personal creativity and collective effort often leads to innovative solutions. Whether working independently or within a team, I find immense satisfaction in translating my artistic vision into captivating user experiences.
+            </p>
+            
+            <label for="read-more-checkbox" class="read-more-label">Read More</label>
+          </div>     
+</div>
+  </div>
+  </div>
+ </div>
+<!------------------------------------------------------------------------------------------->
+<div class="rainbow-line">
+</div>
+ <!--------------------------------------another section------------------------------------------------>
+ <div id="service">
+  <section class="content-service">
+      <h5>Services</h5>
+      <div class="boxes">
+        <div class="box web-dev">
+          <i class="icon fas fa-laptop-code"></i>
+          <h3>Web Developer</h3>
+          <p>Skilled in frontend development.</p>
+        </div>
+        <div class="box sql">
+          <i class="icon fas fa-database"></i>
+          <h3>SQL</h3>
+          <p>Proficient in database management and SQL queries.</p>
+        </div>
+        <!--<div class="box seo">
+          <i class="icon fas fa-chart-bar"></i>
+          <h3>SEO</h3>
+          <p>Experienced in optimizing websites for search engines.</p>
+        </div>
+      </div>-->
+     <a href="#contact"><button class="hire-me-button" title="Allow me to translate your concept into reality by leveraging my coding skills, problem-solving abilities, and creative thinking.">Hire Me</button></a> 
+
+   
+     
+    </div>
+  </section>
+  </div>
+  <!-------------------------------------------------------------------------------------->
+  <div class="rainbow-line">
+  </div>
+<!---------------------------------another section----------------------------------------->
+<div id="project">
+  <div class="top">
+    <h1>Projects</h1>
+  </div>
+  <section class="section">
+    <div class="work">
+      <img src="photo/work 1.jpg" alt="Project 1">
+      <h3 class="color">Project 1</h3>
+      <p class="brief">Description of Project 1.</p>
+      <a href="#contact"><i class="fas fa-external-link-alt"></i></a>
+    </div>
+
+    <div class="work">
+      <img src="photo/work 1.jpg" alt="Project 2">
+      <h3 class="color">Project 2</h3>
+      <p class="brief">Description of Project 2.</p>
+      <a href="#contact"><i class="fas fa-external-link-alt"></i></a>
+    </div>
+
+    <div class="work">
+      <img src="photo/work 1.jpg" alt="Project 3">
+      <h3 class="color">Project 3</h3>
+      <p class="brief">Description of Project 3.</p>
+      <a href="#contact"><i class="fas fa-external-link-alt"></i></a>
+    </div>
+
+    <!-- more project-->
+
+  </section>
+   </div>
+
+<!----------------------------------------------------------------------------------->
+<div class="rainbow-line">
+</div>
+<!----------------------------------Contact Page---------------------------------------------------->
+  <div id="contact">
+
+    <div class="container">
+      <div class="content">
+        <div class="left-side">
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-two">(+123)081-110-695-83</div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">ademolaadewunmi85@gmail.com</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Let Chat</div>
+          <p>Feel free to drop me a message using the form below. I promise to get back to you as soon as I can! Your stories, ideas, and thoughts are always welcome.
+            </p>
+            <form action="https://formspree.io/f/mzblqerb" method="POST">
+          <div class="input-box">
+            <input type="text" name="name" placeholder="Your name">
+          </div>
+          <div class="input-box">
+            <input type="email" name="email" placeholder="Your Email">
+          </div>
+          <div class="input-box message-box">
+            <input type="text" name="message" placeholder="Enter your message">
+          </div>
+          <button class="submit-button" type="submit">Submit</button>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------------------------->
+  <!-- footer section-->
+  <footer id="footer">
+    <div class="container-fluid">
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+            <a href="https://www.facebook.com/AdemolaAdewunmi" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.github.com/Adewunmi-Ademola" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
